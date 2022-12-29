@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/home_fragment">
+
+	<fragment
+        android:id="@+id/home_fragment"
+        android:name="com.companyname.navigationdialogtest.fragments.HomeFragment"
+        android:label="Home">
+		<action
+			android:id="@+id/action_home_to_bottom_sheet"
+			app:destination="@id/bottom_dialog"/>
+	</fragment>
+
+	<dialog
+		android:id="@+id/bottom_dialog"
+		android:name="com.companyname.navigationdialogtest.dialogs.BottomDialog"/>
+</navigation>
